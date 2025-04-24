@@ -1,3 +1,5 @@
+[![Java CI](https://github.com/Malcom1986/min_value_extractor/actions/workflows/main.yml/badge.svg)](https://github.com/Malcom1986/min_value_extractor/actions/workflows/main.yml)
+
 # Minimum value extractor
 
 Это веб-приложение на основе Spring Boot, которое позволяет находить N-ное минимальное значение из списка целых чисел, хранящихся в файле формата Excel (XLSX).
