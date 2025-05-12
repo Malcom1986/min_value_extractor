@@ -16,6 +16,10 @@ public class NumbersService {
         var filePath = minValueRequest.getFilePath();
         var index = minValueRequest.getIndex();
 
+        if (index < 1) {
+            throw new IndexOutOfBoundsException("Element number " + index + " is out of range");
+        }
+
         List<Integer> numbers;
 
         try {
@@ -24,7 +28,7 @@ public class NumbersService {
             throw new FileProcessingException("Problem with the file on the path " + filePath + " : " + e.getMessage());
         }
 
-        if (index < 1 || index > numbers.size()) {
+        if (index > numbers.size()) {
             throw new IndexOutOfBoundsException("Element number " + index + " is out of range");
         }
 
